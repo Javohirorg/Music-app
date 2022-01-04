@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logobox">
+                <img src="./image/logo.png" alt="logotip">
+                <span>Music app</span>
+            </div>
+            <button id="button" onclick="
+            const about = document.querySelector('.about');
+            about.style.transform = `translateY(-100vh)`;
+            " >About this app</button>
+        </nav>
+        <div class="app">
+            <img src="./image/music-bgimg.jpg" alt="error">
+            <div class="btns">
+                <button id="minus"><img src="./image/arrow.png" alt="minus" onclick="minus()"></button>
+                <button id="stop"><img src="./image/logo.png" alt="pause-start" onclick="stopped()" ></button>
+                <button id="plus"><img src="./image/arrow.png" alt="plus" onclick="plus()"></button>
+            </div>
+            <img src="./image/artist.png" alt="artist" class="artist">
+        </div>
+    </div> 
+    <div class="about">
+        <img src="./image/cros.png" alt="X" onclick="
+         const about = document.querySelector('.about');
+         about.style.transform = `translateY(0)`;
+        " id="close">
+        <h1>This is Music app.</h1>
+        <span>This app created by Murzayev Javohir and Javohir Original Team. <br>
+        Create date: 03.01.2022</span>
+    </div>
+    <div class="musics">
+        <!-- <audio src="./Music/Drive Forever (Remix).mp3" /> -->
+       </div>
+    <script src="./app.js"></script>
+</body>
+</html>
